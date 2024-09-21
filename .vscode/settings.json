@@ -10,7 +10,7 @@
         "className",
         "ngClass",
         "class:list",
-        ".*Classes"
+        ".*Twd"
     ],
     "[typescriptreact]": {
         "editor.tabSize": 2
