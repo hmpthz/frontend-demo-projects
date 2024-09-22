@@ -5,6 +5,7 @@ import { Button } from './ui/Button';
 import { BackgroundCircles, BottomLine, Gradient } from './design/Hero';
 import { companyLogos, heroIcons, notificationImages } from '../contents';
 import { ScrollParallax } from 'react-just-parallax';
+import { Generating } from './ui/Generating';
 
 export function Hero() {
   const parallaxRef = useRef<HTMLDivElement>(null);
@@ -47,7 +48,7 @@ const Show = (parallaxRef: RefObject<HTMLElement>) => (
         />
       </div>
       <Gradient />
-      <Generating />
+      <Generating className='bottom-14 md:bottom-16 w-5/6 md:w-[31rem]' />
       <ScrollParallax isAbsolutelyPositioned>
         <IconsPanel />
         <CodeGen />
@@ -73,13 +74,6 @@ const IconsPanel = () => (
       </li>
     ))}
   </ul>
-)
-
-const Generating = () => (
-  <div className={`absolute bottom-14 md:bottom-16 left-1/2 -translate-x-1/2 w-5/6 md:w-[31rem] text-base px-6 py-4 bg-n-8/80 rounded-[1.7rem]`}>
-    <img src={loading} alt='loading' className='inline w-5 h-5 mr-5 animate-spin' />
-    AI is generating
-  </div>
 )
 
 const CodeGen = () => (

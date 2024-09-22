@@ -12,7 +12,7 @@ export function Header() {
   const [isMenuOpned, setMenuOpened] = useState(false);
 
   return (
-    <div className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:backdrop-blur-sm ${isMenuOpned ? 'bg-n-8' : 'bg-n-8/90 backdrop-blur-sm'}`}>
+    <div id='header' className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:backdrop-blur-sm ${isMenuOpned ? 'bg-n-8' : 'bg-n-8/90 backdrop-blur-sm'}`}>
       <div className='flex items-center px-5 lg:px-8 xl:px-10 max-lg:py-4 justify-between'>
         <a className='block w-48 xl:mr-8' href='#hero'>
           <img src={brainwave} alt='brainwave' />
