@@ -17,13 +17,13 @@ export function Section({ className, id, crossesTwd, paddingTwd, children }: Sec
   );
 
   return (
-    <div id={id} className={`relative ${paddingTwd || defaultPaddingTwd} ${className}`}>
+    <section id={id} className={`relative ${paddingTwd || defaultPaddingTwd} ${className}`}>
       {children}
 
       <div className='hidden md:block absolute top-0 left-5 lg:left-8 xl:left-12 w-0.5 h-full bg-stroke-1 pointer-events-none'></div>
       <div className='hidden md:block absolute top-0 right-5 lg:right-8 xl:right-12 w-0.5 h-full bg-stroke-1 pointer-events-none'></div>
 
       {crossesTwd && Cross()}
-    </div>
+    </section>
   )
 }

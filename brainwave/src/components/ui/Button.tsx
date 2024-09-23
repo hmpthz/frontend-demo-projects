@@ -2,7 +2,7 @@ import ButtonSvg from "../../assets/svg/ButtonSvg"
 
 interface ButtonProps extends ChildrenProps {
   className: string,
-  white?: true,
+  white?: boolean,
   href?: string,
   onClick?: () => void,
 }

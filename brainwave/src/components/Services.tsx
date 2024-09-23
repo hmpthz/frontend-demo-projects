@@ -4,6 +4,7 @@ import { Gradient, PhotoChatMessage, VideoBar, VideoChatMessage } from "./design
 import { Section } from "./Section";
 import { Generating } from "./ui/Generating";
 import { Heading } from "./ui/Heading";
+import { ListItem } from "./ui/ListItem";
 
 export function Services() {
   return (
@@ -35,10 +36,7 @@ const Block1 = () => (
       <p className="body-2 mb-[3rem] text-n-3">Brainwave unlocks the potential of AI-powered applications</p>
       <ul className="body-2">
         {brainwaveServices.map((item, index) => (
-          <li key={index} className="py-4 border-t border-n-6">
-            <img className="inline align-bottom" src={check} width={24} height={24} alt="check" />
-            <h6 className="inline body-2 ml-5">{item}</h6>
-          </li>
+          <ListItem as='li' key={index} className="py-4 border-t border-n-6" text={item} />
         ))}
       </ul>
     </div>

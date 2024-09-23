@@ -7,7 +7,7 @@ import { Heading } from "./ui/Heading";
 
 export function Benefits() {
   return (
-    <Section id="benefits" className="">
+    <Section id="features" className="">
       <div className="container relative z-2">
         <Heading className="text-center md:max-w-md lg:max-w-2xl" title="Chat Smarter, Not Harder with Brainwave" />
 

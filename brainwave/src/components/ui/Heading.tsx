@@ -1,3 +1,5 @@
+import Brackets from '../../assets/svg/Brackets'
+
 interface HeadingProps extends ClassProps {
   title: string
   text?: string

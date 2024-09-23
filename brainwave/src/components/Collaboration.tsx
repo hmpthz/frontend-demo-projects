@@ -3,6 +3,7 @@ import { collabApps, collabContent, collabText } from "../contents";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
 import { Section } from "./Section";
 import { Button } from "./ui/Button";
+import { ListItem } from "./ui/ListItem";
 
 export function Collaboration() {
   return (
@@ -21,10 +22,7 @@ const LeftPart = () => (
     <ul className="max-w-[22rem] mb-10 md:mb-14">
       {collabContent.map((item) => (
         <li className="mb-3 py-3" key={item.id}>
-          <p>
-            <img className="inline align-middle" src={check} width={24} height={24} alt="check" />
-            <h6 className="inline body-2 ml-5">{item.title}</h6>
-          </p>
+          <ListItem className="" text={item.title} />
           {item.text && (
             <p className="body-2 mt-3 text-n-4">{item.text}</p>
           )}
