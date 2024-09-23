@@ -1,4 +1,4 @@
-import { brainwaveSymbol, check } from "../assets";
+import { brainwaveSymbol } from "../assets";
 import { collabApps, collabContent, collabText } from "../contents";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
 import { Section } from "./Section";

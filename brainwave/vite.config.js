@@ -33,7 +33,7 @@ export default defineConfig({
   },
 
   build: {
-    outDir: './dist',
+    outDir: '../build/brainwave',
     emptyOutDir: true,
     target: 'es2015',
     minify: 'esbuild',

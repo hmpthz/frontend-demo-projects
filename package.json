@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^8.57.1",
     "@types/node": "16.11",
-    "typescript": "^5.6.2"
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.36.1",
+    "eslint-plugin-unused-imports": "3.x",
+    "globals": "^15.9.0",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^7.18.0"
   }
 }

@@ -1,6 +1,6 @@
 import { useRef, type RefObject } from 'react';
 import { Section } from './Section';
-import { curve, heroBackground, loading, notification1, robot } from '../assets';
+import { curve, heroBackground, notification1, robot } from '../assets';
 import { Button } from './ui/Button';
 import { BackgroundCircles, BottomLine, Gradient } from './design/Hero';
 import { companyLogos, heroIcons, notificationImages } from '../contents';
@@ -49,7 +49,7 @@ const Show = (parallaxRef: RefObject<HTMLElement>) => (
       </div>
       <Gradient />
       <Generating className='bottom-14 md:bottom-16 w-5/6 md:w-[31rem]' />
-      <ScrollParallax isAbsolutelyPositioned>
+      <ScrollParallax isAbsolutelyPositioned zIndex={2}>
         <IconsPanel />
         <CodeGen />
       </ScrollParallax>

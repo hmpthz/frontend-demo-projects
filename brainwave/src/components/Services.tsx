@@ -1,4 +1,4 @@
-import { check, service1, service2, service3 } from "../assets";
+import { service1, service2, service3 } from "../assets";
 import { brainwaveServices, brainwaveServicesIcons } from "../contents";
 import { Gradient, PhotoChatMessage, VideoBar, VideoChatMessage } from "./design/Services";
 import { Section } from "./Section";

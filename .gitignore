@@ -8,10 +8,11 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-build
 dist
 dist-ssr
 *.local
+/*/build
+/build/*/
 
 # Editor directories and files
 .idea
@@ -23,6 +24,5 @@ dist-ssr
 *.sw?
 
 # Misc
-/peer/
 /playground/
 .vercel

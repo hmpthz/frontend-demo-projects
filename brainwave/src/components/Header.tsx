@@ -5,7 +5,6 @@ import { Button } from './ui/Button';
 import MenuSvg from '../assets/svg/MenuSvg';
 import { HamburgerMenu } from './design/Header';
 import { useState } from 'react';
-import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
 export function Header() {
   const loc = useLocation();
