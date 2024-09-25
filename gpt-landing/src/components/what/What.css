@@ -1,0 +1,110 @@
+.what {
+    padding: 2rem;
+
+    background: -moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.what-feature {
+    display: flex;
+}
+
+.what-feature .feature-container {
+    margin: 0;
+}
+
+.what-feature .feature-container__text {
+    max-width: 700px;
+}
+
+.what-heading {
+    display: flex;
+    margin: 4rem 0 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.what-heading>h1 {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 40px;
+    max-width: 510px;
+}
+
+.what-heading a {
+    color: var(--color-subtext);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.what-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.what-container .feature-container {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    flex-direction: column;
+}
+
+.what-container .feature-container__text {
+    margin-top: 0.5rem;
+}
+
+
+@media screen and (max-width: 850px) {
+    .what-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .what-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .what {
+        padding: 1rem;
+    }
+
+    .what-feature .feature-container {
+        flex-direction: column;
+    }
+
+    .what-feature .feature-container__text {
+        margin-top: 0.5rem;
+    }
+
+    .what-heading>h1 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .what-container .feature-container {
+        margin: 1rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .what-container .feature-container {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}
