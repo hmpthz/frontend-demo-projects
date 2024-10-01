@@ -25,9 +25,9 @@
     "verbatimModuleSyntax": true,
     // Standardize namespace import and default import for CommonJS
     "esModuleInterop": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "lib": [
-      "ES2017",
+      "ESNext",
       "DOM",
       "DOM.Iterable"
       // No `ScriptHost`, dropped support for IE

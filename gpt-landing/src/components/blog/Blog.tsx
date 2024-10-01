@@ -13,7 +13,7 @@ const articles: ArticleProps[] = [
 
 function Blog() {
   return (
-    <section className='blog section__padding'>
+    <section id='blog' className='blog section__padding'>
       <h1 className='blog-heading gradient__text'>
         A lot is happening, We are blogging about it.
       </h1>
