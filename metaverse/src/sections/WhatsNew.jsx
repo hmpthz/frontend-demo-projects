@@ -1,6 +1,6 @@
 const WhatsNew = () => (
   <section>
-    What's new section
+    What&rsquo;s new section
   </section>
 );
 
