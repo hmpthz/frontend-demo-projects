@@ -12,7 +12,8 @@ dist
 dist-ssr
 *.local
 /*/build
-/build/*/
+/build/*
+!/build/index.html
 
 # Editor directories and files
 .idea

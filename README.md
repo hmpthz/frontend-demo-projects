@@ -13,6 +13,8 @@ The monorepo is managed by pnpm workspace, and all projects are written in types
 
 ### Brainwave
 
+[Vist >>>](https://hmpthz-frontend-demos.vercel.app/brainwave/index.html)
+
 <p>
     <img alt="react" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
     <img alt="tailwindcss" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
@@ -23,6 +25,8 @@ The monorepo is managed by pnpm workspace, and all projects are written in types
 [[youtube]](https://www.youtube.com/watch?v=B91wc5dCEBA&list=PL6QREj8te1P6CkO_4OIK1-nwG5OxCD5tR) Build and Deploy a Fully Responsive Website with Modern UI/UX in React JS with Tailwind
 
 ### GPT Landing Page
+
+[Vist >>>](https://hmpthz-frontend-demos.vercel.app/gpt-landing/index.html)
 
 <p>
     <img alt="react" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
