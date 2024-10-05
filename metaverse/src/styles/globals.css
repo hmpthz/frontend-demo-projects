@@ -21,7 +21,7 @@
     hsl(221deg 73% 70%) 74%,
     hsl(220deg 76% 51%) 100%
   );
-  filter: blur(125px);
+  filter: blur(100px);
 }
 
 .hero-gradient {

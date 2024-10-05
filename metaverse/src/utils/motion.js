@@ -14,15 +14,15 @@ export const navVariants = {
     transition: {
       type: 'spring',
       stiffness: 80,
-      delay: 1,
+      delay: 0.5,
     },
   },
 };
 
-export const slideIn = (direction, type, delay, duration) => ({
+export const slideIn = (x, y, type, delay, duration) => ({
   hidden: {
-    x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
-    y: direction === 'up' ? '100%' : direction === 'down' ? '100%' : 0,
+    x,
+    y,
   },
   show: {
     x: 0,
@@ -66,10 +66,10 @@ export const textContainer = {
   hidden: {
     opacity: 0,
   },
-  show: (i = 1) => ({
+  show: {
     opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
-  }),
+    transition: { staggerChildren: 0.1 },
+  },
 };
 
 export const textVariant2 = {
@@ -83,6 +83,7 @@ export const textVariant2 = {
     transition: {
       type: 'tween',
       ease: 'easeIn',
+      duration: 1
     },
   },
 };

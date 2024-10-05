@@ -7,6 +7,7 @@ module.exports = {
     'jsx-a11y',
   ],
   rules: {
+    '@typescript-eslint/no-unused-vars': 0,
     'jsx-a11y/label-has-associated-control': 0,
     'jsx-a11y/no-noninteractive-element-interactions': 0,
     'jsx-a11y/click-events-have-key-events': 0,
