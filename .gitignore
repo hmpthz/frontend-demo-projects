@@ -27,3 +27,4 @@ dist-ssr
 # Misc
 /playground/
 .vercel
+next-env.d.ts

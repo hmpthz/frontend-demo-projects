@@ -5,7 +5,9 @@
             "type": "node",
             "request": "launch",
             "program": "${file}",
-            "skipFiles": ["<node_internals>/**"]
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
         },
         {
             "name": "Browser: Chrome",
@@ -13,7 +15,11 @@
             "request": "launch",
             "url": "http://localhost:5173",
             "webRoot": "${workspaceFolder}",
-            "userDataDir": "C:/Workspace/.vscode/chrome-debug-profile"
+            "userDataDir": "C:/Workspace/.vscode/chrome-debug-profile",
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+                "!**/node_modules/**"
+            ],
         },
         {
             "name": "Browser: Edge",
@@ -21,21 +27,32 @@
             "request": "launch",
             "url": "http://localhost:5173",
             "webRoot": "${workspaceFolder}",
-            "userDataDir": "C:/Workspace/.vscode/edge-debug-profile"
+            "userDataDir": "C:/Workspace/.vscode/edge-debug-profile",
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+                "!**/node_modules/**"
+            ],
         },
         {
             "name": "Vite: dev-server",
             "type": "node",
             "request": "launch",
             "runtimeExecutable": "pnpm",
-            "runtimeArgs": ["run", "dev"]
+            "runtimeArgs": [
+                "run",
+                "dev"
+            ]
         },
         {
             "name": "Python: prod-preview",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "module": "http.server",
-            "args": ["4173", "-d", "./dist/"],
+            "args": [
+                "4173",
+                "-d",
+                "./dist/"
+            ],
             "console": "integratedTerminal"
         }
     ]
