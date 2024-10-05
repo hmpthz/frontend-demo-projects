@@ -40,3 +40,15 @@ The monorepo is managed by pnpm workspace, and all projects are written in types
 [[gradient generator]](https://angrytools.com/gradient/)
 
 [[css animation]](https://animista.net/)
+
+### Metaverse
+
+[Vist >>>](https://hmpthz-frontend-metaverse.vercel.app/)
+
+<p>
+    <img alt="nextjs" src="https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
+    <img alt="tailwindcss" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+    <img alt="framer-motion" src="https://img.shields.io/npm/v/framer-motion?style=for-the-badge&label=framer-motion" />
+</p>
+
+[[youtube]](https://www.youtube.com/watch?v=ugCN_gynFYw&list=PL6QREj8te1P6CkO_4OIK1-nwG5OxCD5tR) Build and Deploy a Modern Next 13 Website With Framer Motion & Tailwind CSS
