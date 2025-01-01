@@ -13,7 +13,7 @@ The monorepo is managed by pnpm workspace, and all projects are written in types
 
 ### Brainwave
 
-[Vist >>>](https://hmpthz-frontend-demos.vercel.app/brainwave/index.html)
+[Visit >>>](https://hmpthz-frontend-demos.vercel.app/brainwave/index.html)
 
 <p>
     <img alt="react" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
@@ -26,7 +26,7 @@ The monorepo is managed by pnpm workspace, and all projects are written in types
 
 ### GPT Landing Page
 
-[Vist >>>](https://hmpthz-frontend-demos.vercel.app/gpt-landing/index.html)
+[Visit >>>](https://hmpthz-frontend-demos.vercel.app/gpt-landing/index.html)
 
 <p>
     <img alt="react" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
@@ -43,7 +43,7 @@ The monorepo is managed by pnpm workspace, and all projects are written in types
 
 ### Metaverse
 
-[Vist >>>](https://hmpthz-frontend-metaverse.vercel.app/)
+[Visit >>>](https://hmpthz-frontend-metaverse.vercel.app/)
 
 <p>
     <img alt="nextjs" src="https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
