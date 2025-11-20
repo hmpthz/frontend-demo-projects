@@ -11,9 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-/*/build
-/build/*
-!/build/index.html
+build
 
 # Editor directories and files
 .idea

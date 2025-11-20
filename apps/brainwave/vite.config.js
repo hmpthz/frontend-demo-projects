@@ -29,7 +29,7 @@ export default defineConfig({
   build: {
     outDir: '../build/brainwave',
     emptyOutDir: true,
-    target: 'es2015',
+    target: 'es2022',
     minify: 'esbuild',
     sourcemap: false,
     rollupOptions: {},
