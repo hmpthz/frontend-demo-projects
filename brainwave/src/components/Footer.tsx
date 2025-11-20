@@ -1,5 +1,5 @@
-import { socials } from "../contents";
-import { Section } from "./Section";
+import { socials } from '../contents';
+import { Section } from './Section';
 
 export function Footer() {
   return (
@@ -9,13 +9,18 @@ export function Footer() {
 
         <ul className="flex gap-5 flex-wrap">
           {socials.map((item) => (
-            <a key={item.id} href={item.url} target="_blank"
-              className="flex justify-center items-center w-10 h-10 bg-n-7 hover:bg-n-5 rounded-full transition-colors" rel="noreferrer">
+            <a
+              key={item.id}
+              href={item.url}
+              target="_blank"
+              className="flex justify-center items-center w-10 h-10 bg-n-7 hover:bg-n-5 rounded-full transition-colors"
+              rel="noreferrer"
+            >
               <img src={item.iconUrl} alt={item.title} />
             </a>
           ))}
         </ul>
       </footer>
     </Section>
-  )
+  );
 }

@@ -83,7 +83,7 @@ export const textVariant2 = {
     transition: {
       type: 'tween',
       ease: 'easeIn',
-      duration: 1
+      duration: 1,
     },
   },
 };

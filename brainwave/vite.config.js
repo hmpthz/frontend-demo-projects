@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -14,22 +14,16 @@ export default defineConfig({
   root: '',
   /** relative to root */
   publicDir: 'public',
-  plugins: [
-    react()
-  ],
+  plugins: [react()],
 
-  define: {
-
-  },
+  define: {},
   resolve: {
-    alias: {
-
-    }
+    alias: {},
   },
 
   server: {
     strictPort: true,
-    hmr: true
+    hmr: true,
   },
 
   build: {
@@ -38,8 +32,6 @@ export default defineConfig({
     target: 'es2015',
     minify: 'esbuild',
     sourcemap: false,
-    rollupOptions: {
-
-    }
-  }
-})
+    rollupOptions: {},
+  },
+});

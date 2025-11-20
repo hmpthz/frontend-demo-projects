@@ -1,11 +1,11 @@
-import { smallSphere, stars } from "../assets";
-import { pricing, type PriceItem } from "../contents";
-import { LeftLine, RightLine } from "./design/Pricing";
-import { Section } from "./Section";
-import { Button } from "./ui/Button";
-import { Heading } from "./ui/Heading";
-import { ListItem } from "./ui/ListItem";
-import { Tagline } from "./ui/Tagline";
+import { smallSphere, stars } from '../assets';
+import { pricing, type PriceItem } from '../contents';
+import { LeftLine, RightLine } from './design/Pricing';
+import { Section } from './Section';
+import { Button } from './ui/Button';
+import { Heading } from './ui/Heading';
+import { ListItem } from './ui/ListItem';
+import { Tagline } from './ui/Tagline';
 
 export function Pricing() {
   return (
@@ -29,17 +29,29 @@ export function Pricing() {
           <RightLine />
         </div>
 
-        <a href="#placeholder" className="block mt-10 text-xs font-code font-bold uppercase text-center underline hover:no-underline tracking-wider">See the full details</a>
+        <a
+          href="#placeholder"
+          className="block mt-10 text-xs font-code font-bold uppercase text-center underline hover:no-underline tracking-wider"
+        >
+          See the full details
+        </a>
       </div>
     </Section>
-  )
+  );
 }
 
 const PricingCard = (item: PriceItem) => {
-  const colors: Record<string, string> = {'0':'text-color-2', '1':'text-color-1', '2':'text-color-3'};
+  const colors: Record<string, string> = {
+    '0': 'text-color-2',
+    '1': 'text-color-1',
+    '2': 'text-color-3',
+  };
 
   return (
-    <div key={item.id} className="w-4/5 lg:w-auto px-6 even:py-16 odd:py-8 lg:odd:my-4 bg-n-8 border border-n-6 rounded-[2rem]">
+    <div
+      key={item.id}
+      className="w-4/5 lg:w-auto px-6 even:py-16 odd:py-8 lg:odd:my-4 bg-n-8 border border-n-6 rounded-[2rem]"
+    >
       <h4 className={`h4 mb-4 ${colors[item.id]}`}>{item.title}</h4>
 
       <p className="body-2 min-h-[4rem] mb-3 text-n-1/50">{item.description}</p>
@@ -53,7 +65,11 @@ const PricingCard = (item: PriceItem) => {
         )}
       </p>
 
-      <Button className="w-full mb-6" href={item.price ? '#pricing' : '#placeholder'} white={item.price != null}>
+      <Button
+        className="w-full mb-6"
+        href={item.price ? '#pricing' : '#placeholder'}
+        white={item.price != null}
+      >
         {item.price ? 'Get started' : 'Contact us'}
       </Button>
 
@@ -63,5 +79,5 @@ const PricingCard = (item: PriceItem) => {
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};

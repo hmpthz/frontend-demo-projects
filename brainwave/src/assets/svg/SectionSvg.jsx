@@ -1,4 +1,4 @@
-import PlusSvg from "./PlusSvg";
+import PlusSvg from './PlusSvg';
 
 const SectionSvg = ({ crossesOffset }) => {
   return (

@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import styles from "@/styles";
+import { motion } from 'framer-motion';
+import styles from '@/styles';
 import { staggerContainer, planetVariants, fadeIn } from '@/utils/motion';
 
 interface StartStepProps {
@@ -13,9 +13,7 @@ const StartSteps = ({ num, text }: StartStepProps) => (
       <p className="font-bold text-[20px] text-white">0{num}</p>
     </div>
 
-    <p className="flex-1 ml-[30px] font-normal text-[18px] text-[#B0B0B0] leading-[32px]">
-      {text}
-    </p>
+    <p className="flex-1 ml-[30px] font-normal text-[18px] text-[#B0B0B0] leading-[32px]">{text}</p>
   </div>
 );
 

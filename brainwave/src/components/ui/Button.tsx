@@ -1,10 +1,10 @@
-import ButtonSvg from "../../assets/svg/ButtonSvg"
+import ButtonSvg from '../../assets/svg/ButtonSvg';
 
 interface ButtonProps extends ChildrenProps {
-  className: string,
-  white?: boolean,
-  href?: string,
-  onClick?: () => void,
+  className: string;
+  white?: boolean;
+  href?: string;
+  onClick?: () => void;
 }
 
 export function Button({ className, children, white, href, onClick }: ButtonProps) {
