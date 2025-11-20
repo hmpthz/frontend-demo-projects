@@ -1,4 +1,6 @@
 packages:
-    - 'brainwave'
-    - 'gpt-landing'
-    - 'metaverse'
+  - brainwave
+  - gpt-landing
+  - metaverse
+onlyBuiltDependencies:
+  - esbuild

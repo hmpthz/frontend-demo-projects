@@ -1,59 +1,45 @@
 {
-    "configurations": [
-        {
-            "name": "Node: Current File",
-            "type": "node",
-            "request": "launch",
-            "program": "${file}",
-            "skipFiles": [
-                "<node_internals>/**"
-            ]
-        },
-        {
-            "name": "Browser: Chrome",
-            "type": "chrome",
-            "request": "launch",
-            "url": "http://localhost:5173",
-            "webRoot": "${workspaceFolder}",
-            "userDataDir": "C:/Workspace/.vscode/chrome-debug-profile",
-            "resolveSourceMapLocations": [
-                "${workspaceFolder}/**",
-                "!**/node_modules/**"
-            ],
-        },
-        {
-            "name": "Browser: Edge",
-            "type": "msedge",
-            "request": "launch",
-            "url": "http://localhost:5173",
-            "webRoot": "${workspaceFolder}",
-            "userDataDir": "C:/Workspace/.vscode/edge-debug-profile",
-            "resolveSourceMapLocations": [
-                "${workspaceFolder}/**",
-                "!**/node_modules/**"
-            ],
-        },
-        {
-            "name": "Vite: dev-server",
-            "type": "node",
-            "request": "launch",
-            "runtimeExecutable": "pnpm",
-            "runtimeArgs": [
-                "run",
-                "dev"
-            ]
-        },
-        {
-            "name": "Python: prod-preview",
-            "type": "debugpy",
-            "request": "launch",
-            "module": "http.server",
-            "args": [
-                "4173",
-                "-d",
-                "./dist/"
-            ],
-            "console": "integratedTerminal"
-        }
-    ]
+  "configurations": [
+    {
+      "name": "Node: Current File",
+      "type": "node",
+      "request": "launch",
+      "program": "${file}",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "TSX Node: Current File",
+      "type": "node",
+      "request": "launch",
+      "program": "${file}",
+      "runtimeExecutable": "tsx",
+      "cwd": "${fileDirname}",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "Browser: Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}",
+      "userDataDir": "${env:HOME}${env:USERPROFILE}/.cache/chrome-debug-profile",
+      "resolveSourceMapLocations": ["${workspaceFolder}/**", "!**/node_modules/**"],
+      "sourceMaps": true
+    },
+    {
+      "name": "Vite: Dev Server",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/vite/bin/vite.js",
+      "cwd": "${workspaceFolder}",
+      "sourceMaps": true,
+      "skipFiles": ["<node_internals>/**"],
+      "console": "integratedTerminal",
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**",
+        "**/node_modules/.vite-temp/**"
+      ]
+    }
+  ]
 }
