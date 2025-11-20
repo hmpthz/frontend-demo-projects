@@ -1,4 +1,26 @@
-import nextVitals from 'eslint-config-next/core-web-vitals';
-import { preset, extended } from '../../eslint.base';
+import { FlatCompat } from '@eslint/eslintrc';
+import { preset, extended } from '../../eslint.base.js';
 
-export default [preset.prettierConfig, nextVitals, extended.baseConfig, extended.jsxConfig];
+const compat = new FlatCompat({
+  baseDirectory: import.meta.dirname,
+});
+const compatNextVitals = [
+  ...compat.config({
+    extends: ['next/core-web-vitals'],
+  }),
+  {
+    rules: {
+      '@next/next/no-img-element': 0,
+    },
+  },
+];
+
+const config = [
+  preset.prettierConfig,
+  ...preset.baseConfigs,
+  ...compatNextVitals,
+  ...extended.baseConfigs,
+  extended.jsxConfig,
+];
+
+export default config;

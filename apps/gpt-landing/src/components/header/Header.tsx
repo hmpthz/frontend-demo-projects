@@ -6,7 +6,7 @@ function Header() {
   return (
     <section id="home" className="header section__padding">
       <div className="header-content">
-        <h1 className="gradient__text">Let's Build Something amazing with GPT-3 OpenAI</h1>
+        <h1 className="gradient__text">Let&rsquo;s Build Something amazing with GPT-3 OpenAI</h1>
 
         <p className="">
           Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise

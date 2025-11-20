@@ -28,7 +28,7 @@ export function Roadmap() {
   );
 }
 
-const RoadmapCard = (item: RoadMapItem, index: number) => {
+const RoadmapCard = (item: RoadMapItem) => {
   const status = item.status == 'done' ? 'Done' : 'In progress';
 
   return (

@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { TypingText } from '@/components';
 import styles from '@/styles';
 import { fadeIn, staggerContainer } from '@/utils/motion';

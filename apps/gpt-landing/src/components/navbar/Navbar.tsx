@@ -23,11 +23,9 @@ function Navbar() {
         </div>
 
         <nav className="navbar-links__container">
-          {links.map((item, index) => (
-            <p>
-              <a key={index} href={item.href}>
-                {item.text}
-              </a>
+          {links.map((item) => (
+            <p key={item.href}>
+              <a href={item.href}>{item.text}</a>
             </p>
           ))}
         </nav>
@@ -35,7 +33,7 @@ function Navbar() {
 
       <div className="navbar-sign">
         <p>
-          <a>Sign in</a>
+          <a href="#home">Sign in</a>
         </p>
         <button type="button">Sign up</button>
       </div>
@@ -55,17 +53,15 @@ function Navbar() {
 const MobileMenu = () => (
   <div className="navbar-menu__container scale-up-center">
     <nav className="navbar-menu__container-links">
-      {links.map((item, index) => (
-        <p>
-          <a key={index} href={item.href}>
-            {item.text}
-          </a>
+      {links.map((item) => (
+        <p key={item.href}>
+          <a href={item.href}>{item.text}</a>
         </p>
       ))}
 
       <div className="navbar-menu__container-links-sign">
         <p>
-          <a>Sign in</a>
+          <a href="#home">Sign in</a>
         </p>
         <button type="button">Sign up</button>
       </div>

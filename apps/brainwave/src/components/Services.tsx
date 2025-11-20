@@ -66,7 +66,8 @@ const Block2 = () => (
     <div className="absolute z-2 px-8 lg:px-15 bottom-8">
       <h4 className="h4 mb-4">Photo editing</h4>
       <p className="body-2 mb-[3rem] text-n-3">
-        Automatically enhance your photos using our AI app's photo editing feature. Try it now!
+        Automatically enhance your photos using our AI app&rsquo;s photo editing feature. Try it
+        now!
       </p>
     </div>
 
@@ -79,7 +80,8 @@ const Block3 = () => (
     <div className="px-4 xl:px-8 py-12">
       <h4 className="h4 mb-4">Video generation</h4>
       <p className="body-2 mb-[2rem] text-n-3">
-        The world’s most powerful AI photo and video art generation engine. What will you create?
+        The world&rsquo;s most powerful AI photo and video art generation engine. What will you
+        create?
       </p>
 
       <ul className="flex items-center justify-between">

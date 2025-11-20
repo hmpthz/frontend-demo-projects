@@ -1,6 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@source "../**/*.{js,ts,jsx,tsx}";
+
+@theme {
+  --font-sans: 'Eudoxus Sans', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'sans-serif';
+  --color-primary-black: #1a232e;
+  --color-secondary-white: #c7c7c7;
+  --timing-function-out-flex: cubic-bezier(0.05, 0.6, 0.4, 0.9);
+}
 
 * {
   margin: 0;

@@ -1,4 +1,4 @@
-import { useRef, type RefObject } from 'react';
+import { useRef, type MutableRefObject } from 'react';
 import { Section } from './Section';
 import { curve, heroBackground, notification1, robot } from '../assets';
 import { Button } from './ui/Button';
@@ -8,7 +8,7 @@ import { ScrollParallax } from 'react-just-parallax';
 import { Generating } from './ui/Generating';
 
 export function Hero() {
-  const parallaxRef = useRef<HTMLDivElement>(null);
+  const parallaxRef = useRef<HTMLDivElement | null>(null);
 
   return (
     <Section
@@ -49,7 +49,7 @@ const Starter = () => (
   </div>
 );
 
-const Show = (parallaxRef: RefObject<HTMLElement>) => (
+const Show = (parallaxRef: MutableRefObject<HTMLDivElement | null>) => (
   <div id="hero/show" className="relative max-w-sm md:max-w-5xl mx-auto xl:mb-24">
     <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
       <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />

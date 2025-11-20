@@ -10,7 +10,7 @@ function Possibility() {
       </div>
       <div className="possibility-content">
         <h4>
-          <a>Request Early Access to Get Started</a>
+          <span>Request Early Access to Get Started</span>
         </h4>
         <h1 className="gradient__text">The possibilities are beyond your imagination</h1>
         <p>
@@ -19,7 +19,7 @@ function Possibility() {
           years to order allow asked of.
         </p>
         <h4>
-          <a>Request Early Access to Get Started</a>
+          <span>Request Early Access to Get Started</span>
         </h4>
       </div>
     </section>

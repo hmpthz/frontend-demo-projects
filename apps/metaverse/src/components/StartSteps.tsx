@@ -1,6 +1,4 @@
-import { motion } from 'framer-motion';
 import styles from '@/styles';
-import { staggerContainer, planetVariants, fadeIn } from '@/utils/motion';
 
 interface StartStepProps {
   num: number;

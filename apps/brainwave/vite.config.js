@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -14,7 +15,7 @@ export default defineConfig({
   root: '',
   /** relative to root */
   publicDir: 'public',
-  plugins: [react()],
+  plugins: [tailwindcss(), react()],
 
   define: {},
   resolve: {
@@ -27,11 +28,16 @@ export default defineConfig({
   },
 
   build: {
-    outDir: '../build/brainwave',
+    outDir: 'build',
     emptyOutDir: true,
     target: 'es2022',
     minify: 'esbuild',
     sourcemap: false,
     rollupOptions: {},
+  },
+  test: {
+    environment: 'jsdom',
+    setupFiles: './vitest.setup.ts',
+    css: true,
   },
 });

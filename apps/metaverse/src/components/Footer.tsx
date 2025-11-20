@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import styles from '@/styles';
 import { footerVariants } from '@/utils/motion';
 import { socials } from '@/constants';
@@ -16,7 +16,11 @@ function Footer() {
         <div className="text-white flex items-center justify-between flex-wrap gap-5">
           <h4 className="font-bold text-[44px] md:text-[64px]">Enter the Metaverse </h4>
           <button type="button" className="py-4 px-6 bg-[#25618b] rounded-[32px]">
-            <img src="./headset.svg" className="inline-block w-[24px] h-[24px] align-bottom" />
+            <img
+              src="./headset.svg"
+              alt="enter metaverse headset"
+              className="inline-block w-[24px] h-[24px] align-bottom"
+            />
             <span className="font-normal text-[16px] ml-3">ENTER METAVERSE</span>
           </button>
         </div>
@@ -29,7 +33,7 @@ function Footer() {
               Copyright © 2021 - 2022 Metaversus. All rights reserved.
             </p>
             <div className="">
-              {socials.map((item, i) => (
+              {socials.map((item) => (
                 <img
                   key={item.name}
                   src={item.url}

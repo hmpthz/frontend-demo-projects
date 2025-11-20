@@ -1,3 +1,4 @@
+import type { JSX } from 'react';
 import { check } from '../../assets';
 
 interface ListItemProps extends ClassProps {

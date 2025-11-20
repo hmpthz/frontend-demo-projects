@@ -1,9 +1,9 @@
-import { preset, extended } from '../../eslint.base';
+import { preset, extended } from '../../eslint.base.js';
 
 export default [
   preset.prettierConfig,
   ...preset.baseConfigs,
   preset.reactConfig,
-  extended.baseConfig,
+  ...extended.baseConfigs,
   extended.jsxConfig,
 ];

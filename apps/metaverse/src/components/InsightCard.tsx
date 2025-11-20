@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion';
-import styles from '@/styles';
+import { motion } from 'motion/react';
 import { fadeIn } from '@/utils/motion';
 
 interface CardProps {

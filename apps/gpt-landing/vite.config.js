@@ -27,11 +27,16 @@ export default defineConfig({
   },
 
   build: {
-    outDir: '../build/gpt-landing',
+    outDir: 'build',
     emptyOutDir: true,
     target: 'es2022',
     minify: 'esbuild',
     sourcemap: false,
     rollupOptions: {},
+  },
+  test: {
+    environment: 'jsdom',
+    setupFiles: './vitest.setup.ts',
+    css: true,
   },
 });

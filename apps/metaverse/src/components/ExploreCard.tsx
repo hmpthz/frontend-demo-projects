@@ -1,4 +1,4 @@
-import { animate, motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import styles from '@/styles';
 import { fadeIn, slideIn } from '@/utils/motion';
 import type { WorldItem } from '@/constants';

@@ -14,7 +14,7 @@ function Brand() {
   return (
     <div className="brand section__padding">
       {logos.map((item) => (
-        <div>
+        <div key={item.alt}>
           <img src={item.img} alt={item.alt} />
         </div>
       ))}
