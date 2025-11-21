@@ -23,6 +23,7 @@ build
 *.sw?
 
 # Misc
+task.md
 /playground/
 .vercel
 next-env.d.ts

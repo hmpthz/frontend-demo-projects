@@ -14,6 +14,7 @@
   },
   "scripts": {
     "build:spa": "pnpm -F brainwave -F gpt-landing build",
+    "postbuild:spa": "node deploy/postbuild.cjs",
     "clean:build": "rimraf -g apps/*/build",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
   },
@@ -33,6 +34,7 @@
     "globals": "^15.15.0",
     "jsdom": "^27.2.0",
     "prettier": "^3.6.2",
+    "showdown": "^2.1.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.47.0",
     "vite": "^5.4.8",
