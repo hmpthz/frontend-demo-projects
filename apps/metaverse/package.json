@@ -1,0 +1,27 @@
+{
+  "name": "metaverse",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 5173",
+    "type-check": "tsc --noEmit",
+    "build": "pnpm type-check && next build",
+    "start": "next start -p 5173",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "motion": "^12.23.24",
+    "next": "^15.5.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@tailwindcss/postcss": "^4.1.17",
+    "eslint-config-next": "^15.5.6",
+    "tailwindcss": "^4.1.17"
+  }
+}

@@ -9,6 +9,7 @@
 
     "allowSyntheticDefaultImports": true,
     "lib": ["ESNext"],
-    "forceConsistentCasingInFileNames": true
-  },
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true
+  }
 }

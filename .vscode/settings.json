@@ -1,18 +1,9 @@
 {
-    "search.useIgnoreFiles": true,
-    "typescript.tsdk": "node_modules\\typescript\\lib",
-    "typescript.preferences.importModuleSpecifier": "shortest",
-    "files.associations": {
-        "*.css": "tailwindcss"
-    },
-    "tailwindCSS.classAttributes": [
-        "class",
-        "className",
-        "ngClass",
-        "class:list",
-        ".*Twd"
-    ],
-    "[typescriptreact]": {
-        "editor.tabSize": 2
-    }
+  "search.useIgnoreFiles": true,
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.preferences.importModuleSpecifier": "shortest",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.classAttributes": ["class", "className", "ngClass", "class:list", ".*Twd"]
 }

@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": "..",
+    },
+    {
+      "path": "../../another-react-responsive-masonry",
+    },
+  ],
+  "settings": {
+    "typescript.tsdk": "frontend-demo-projects\\node_modules\\typescript\\lib",
+    "files.associations": {
+      "*.css": "tailwindcss",
+    },
+    "tailwindCSS.classAttributes": ["class", "className", "ngClass", "class:list", ".*Twd"],
+  },
+}

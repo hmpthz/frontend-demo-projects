@@ -11,9 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-/*/build
-/build/*
-!/build/index.html
+build
 
 # Editor directories and files
 .idea
@@ -25,6 +23,7 @@ dist-ssr
 *.sw?
 
 # Misc
+task.md
 /playground/
 .vercel
 next-env.d.ts

@@ -1,4 +1,5 @@
 packages:
-    - 'brainwave'
-    - 'gpt-landing'
-    - 'metaverse'
+  - apps/*
+onlyBuiltDependencies:
+  - esbuild
+  - unrs-resolver

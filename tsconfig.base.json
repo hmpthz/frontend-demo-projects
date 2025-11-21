@@ -4,12 +4,13 @@
     //   `build.target` option in the Vite config.
     //   So don't change the `target` field here. It has to be
     //   at least `ES2020` for dynamic `import()`s and `import.meta` to work correctly.
-    "target": "ESNext",
-    "module": "ESNext",
+    "target": "esnext",
+    "module": "esnext",
     // https://blog.csdn.net/weixin_40013817/article/details/127200965
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "allowJs": true,
+    "checkJs": false,
     "strict": true,
     // IMPORTANT!! It will change the behavior while defining class fields
     // https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html#the-usedefineforclassfields-flag-and-the-declare-property-modifier
@@ -27,7 +28,7 @@
     "esModuleInterop": true,
     "jsx": "preserve",
     "lib": [
-      "ESNext",
+      "ES2022",
       "DOM",
       "DOM.Iterable"
       // No `ScriptHost`, dropped support for IE

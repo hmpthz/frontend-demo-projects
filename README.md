@@ -1,6 +1,6 @@
 ## frontend-demo-projects
 
-[[Deployed Website]](https://hmpthz-frontend-demos.vercel.app/)
+[[Deployed Website]](https://hmpthz.github.io/frontend-demo-projects/)
 
 Frontend projects following multiple tutorials from [JavaScript Mastery](https://www.youtube.com/@javascriptmastery).
 
@@ -13,7 +13,7 @@ The monorepo is managed by pnpm workspace, and all projects are written in types
 
 ### Brainwave
 
-[Visit >>>](https://hmpthz-frontend-demos.vercel.app/brainwave/index.html)
+[Visit >>>](https://hmpthz.github.io/frontend-demo-projects/brainwave/index.html)
 
 <p>
     <img alt="react" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
@@ -26,7 +26,7 @@ The monorepo is managed by pnpm workspace, and all projects are written in types
 
 ### GPT Landing Page
 
-[Visit >>>](https://hmpthz-frontend-demos.vercel.app/gpt-landing/index.html)
+[Visit >>>](https://hmpthz.github.io/frontend-demo-projects/gpt-landing/index.html)
 
 <p>
     <img alt="react" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
