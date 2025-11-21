@@ -131,7 +131,7 @@ export const fadeIn = (
 export const planetVariants = (direction: 'left' | 'right'): Variants =>
   ({
     hidden: {
-      x: direction === 'left' ? '-100%' : '100%',
+      x: direction === 'left' ? -600 : 600,
       rotate: 120,
     },
     show: {
