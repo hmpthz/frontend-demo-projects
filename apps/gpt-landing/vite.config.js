@@ -27,7 +27,7 @@ export default defineConfig({
   },
 
   build: {
-    outDir: 'build',
+    outDir: '../../build/gpt-landing',
     emptyOutDir: true,
     target: 'es2022',
     minify: 'esbuild',

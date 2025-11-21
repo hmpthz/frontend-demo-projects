@@ -2,8 +2,14 @@ Plan mode: If user **explicitly** asked to make a plan, write it under `.claude/
 
 # Project Structure
 
-Monorepo managed by pnpm workspaces. App projects are under `apps/` folder.
-Root `package.json` has shared devDependencies to avoid duplications, each app must not add them again.
+Monorepo managed by pnpm workspaces. Root `package.json` has shared devDependencies to avoid duplications:
+
+- TypeScript
+- ESLint, Prettier
+- Vite, Vitest
+- Testing Library
+
+App projects are under `apps/` folder:
 
 - apps/brainwave: React v19 + Tailwind CSS v4 + Vite
 - apps/gpt-landing: React v19 + Vanilla CSS + Vite
@@ -20,7 +26,7 @@ Each package should expose these scripts:
 - `build` – typecheck and build the package
 - `lint` – lint the package
 - `lint:fix` – lint and auto-fix errors if possible (always run before your work is finished)
-- `test` – run tests (if present)
+- `test` – run unit tests using `vitest`
 
 ## Coding Standards
 

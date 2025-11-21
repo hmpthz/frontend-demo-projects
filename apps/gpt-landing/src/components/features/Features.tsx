@@ -11,7 +11,7 @@ function Features() {
           Happen.
         </h1>
         <p>
-          <span>Request Early Access to Get Started</span>
+          <a href="#cta">Request Early Access to Get Started</a>
         </p>
       </div>
 

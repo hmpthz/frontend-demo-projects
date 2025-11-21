@@ -3,7 +3,7 @@ import './CTA.css';
 
 function CTA() {
   return (
-    <div className="cta">
+    <div id="cta" className="cta">
       <div className="cta-content">
         <p>Request Early Access to Get Started</p>
         <h3>Register today & start exploring the endless possiblities.</h3>

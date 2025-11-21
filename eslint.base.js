@@ -35,7 +35,7 @@ export const extended = {
         ],
       },
     },
-    globalIgnores(['**/dist/', '**/build/', '**/.next/'])
+    globalIgnores(['**/dist/', '**/build/', '**/.next/', '**/next-env.d.ts'])
   ),
 
   jsxConfig: defineConfig({

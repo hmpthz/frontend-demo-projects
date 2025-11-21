@@ -1,11 +1,8 @@
 {
   "extends": "../../tsconfig.base.json",
   "include": ["src"],
-  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx"],
-  "references": [{ "path": "./tsconfig.node.json" }],
   "compilerOptions": {
     "outDir": "./build",
-    "composite": true,
-    "types": []
+    "types": ["@testing-library/jest-dom/vitest"]
   }
 }
