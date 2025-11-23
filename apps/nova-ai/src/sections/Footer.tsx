@@ -3,7 +3,7 @@ import { Terminal, Github, Twitter, Disc } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="border-t border-nova-border bg-black/80 backdrop-blur-md py-12">
+    <footer className="border-t border-nova-border bg-black/60 backdrop-blur-md py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-1 md:col-span-2">

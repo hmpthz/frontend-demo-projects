@@ -10,38 +10,32 @@ const CANVAS_CONFIG = {
   },
   radiance: {
     // Colors used for the floating glowing orbs
-    colors: [
-      '#ff0055', // Nova Pink
-      '#8B0000', // Dark Red
-      '#4B0082', // Indigo
-      '#800080', // Purple
-      '#00008B', // Dark Blue
-    ],
-    count: 7, // How many distinct glowing blobs exist
-    speed: 1, // Maximum movement speed of the blobs
+    colors: ['#ff0055', '#8B0000', '#4B0082', '#800080', '#0000a1'],
+    count: 6, // How many distinct glowing blobs exist
+    speed: 1.1, // Maximum movement speed of the blobs
     radius: {
-      min: 300, // Minimum size of a blob
+      min: 400, // Minimum size of a blob
       max: 600, // Maximum size of a blob
     },
     pulse: {
-      speedMin: 0.002, // Minimum breathing speed
-      speedMax: 0.005, // Maximum breathing speed
-      intensity: 0.3, // How much the size fluctuates (percentage)
+      speedMin: 0.0015, // Minimum breathing speed
+      speedMax: 0.003, // Maximum breathing speed
+      intensity: 0.25, // How much the size fluctuates (percentage)
     },
     opacity: {
-      center: '44', // Hex alpha for center
-      edge: '22', // Hex alpha for edge
+      center: '3A', // Hex alpha for center
+      edge: '1A', // Hex alpha for edge
     },
   },
   particles: {
     count: {
-      mobile: 40, // Number of particles on small screens
-      desktop: 80, // Number of particles on large screens
+      mobile: 30, // Number of particles on small screens
+      desktop: 60, // Number of particles on large screens
     },
     speed: 0.3, // Base movement speed
     size: {
-      min: 0.5, // Minimum particle radius
-      max: 2.0, // Maximum particle radius
+      min: 0.6, // Minimum particle radius
+      max: 2.4, // Maximum particle radius
     },
     colors: {
       default: 'rgba(255, 255, 255, 0.5)', // Idle particle color

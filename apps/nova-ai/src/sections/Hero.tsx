@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
                 ITERATE.
               </span>{' '}
               <br />
-              <span className="text-nova-pink drop-shadow-[0_0_10px_rgba(255,0,85,0.5)]">
+              <span className="text-nova-pink drop-shadow-[0_0_10px_rgba(255,0,85,0.5)] inline-block animate-glitch">
                 DOMINATE.
               </span>
             </h1>

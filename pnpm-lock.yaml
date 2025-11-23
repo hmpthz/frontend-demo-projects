@@ -7,6 +7,9 @@ settings:
 overrides:
   react: ^19.0.0
   react-dom: ^19.0.0
+  '@tailwindcss/postcss': ^4.1.17
+  '@tailwindcss/vite': ^4.1.17
+  tailwindcss: ^4.1.17
 
 importers:
 
@@ -155,6 +158,13 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.2.0(react@19.2.0)
+    devDependencies:
+      '@tailwindcss/vite':
+        specifier: ^4.1.17
+        version: 4.1.17(vite@7.2.4(@types/node@22.19.1)(jiti@2.6.1)(lightningcss@1.30.2))
+      tailwindcss:
+        specifier: ^4.1.17
+        version: 4.1.17
 
 packages:
 

@@ -14,6 +14,7 @@ App projects are under `apps/` folder:
 - apps/brainwave: React v19 + Tailwind CSS v4 + Vite
 - apps/gpt-landing: React v19 + Vanilla CSS + Vite
 - apps/metaverse: Next.js v15 + Tailwind CSS v4
+- apps/nova-ai: React v19 + Tailwind CSS v4 + Vite
 
 # Development Guidelines
 
