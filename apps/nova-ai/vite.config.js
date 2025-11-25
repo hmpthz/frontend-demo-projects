@@ -31,7 +31,7 @@ export default defineConfig({
   },
 
   build: {
-    outDir: '../../build/brainwave',
+    outDir: '../../build/nova-ai',
     emptyOutDir: true,
     target: 'es2022',
     minify: 'esbuild',

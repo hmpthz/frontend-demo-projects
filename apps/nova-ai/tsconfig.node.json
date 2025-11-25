@@ -1,6 +1,6 @@
 {
   "extends": "../../tsconfig.base.node.json",
-  "include": ["vite.config.js"],
+  "include": ["vite.config.js", "scripts"],
   "compilerOptions": {
     "outDir": "./build",
     "types": ["vite/client", "node"]

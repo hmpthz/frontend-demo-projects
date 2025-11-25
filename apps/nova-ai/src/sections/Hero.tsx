@@ -83,11 +83,10 @@ export const Hero: React.FC = () => {
                 <p>&gt; processing...</p>
                 <div className="mt-4 relative group">
                   <img
-                    src="https://picsum.photos/seed/cyber/600/400"
+                    src="hero.jpg"
                     alt="Generated Art"
-                    className="w-full h-64 object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 border border-green-500/30"
+                    className="w-full h-64 object-cover filter grayscale-50 group-hover:grayscale-0 transition-all duration-500 border border-green-500/30"
                   />
-                  <div className="absolute inset-0 bg-green-500/10 bg-[url('https://www.transparenttextures.com/patterns/diagmonds-light.png')] opacity-50 pointer-events-none"></div>
                 </div>
                 <p className="animate-pulse">
                   &gt; generation complete.{' '}

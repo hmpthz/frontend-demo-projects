@@ -13,7 +13,7 @@
     "pnpm": ">=9.0.0"
   },
   "scripts": {
-    "build:spa": "pnpm -F brainwave -F gpt-landing build",
+    "build:spa": "pnpm -F=!metaverse build",
     "postbuild:spa": "node deploy/postbuild.cjs",
     "clean:build": "rimraf -g apps/*/build",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""

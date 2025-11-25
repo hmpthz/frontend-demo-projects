@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar } from './sections/Navbar';
 import { Hero } from './sections/Hero';
 import { CanvasBackground } from './sections/CanvasBackground';
-import { ParallaxGallery } from './sections/ParallaxGallery';
+import { Gallery } from './sections/Gallery';
 import { Features } from './sections/Features';
 import { AdvancedFeatures } from './sections/AdvancedFeatures';
 import { About } from './sections/About';
@@ -23,7 +23,7 @@ function App() {
           <Hero />
           <Features />
           <AdvancedFeatures />
-          <ParallaxGallery />
+          <Gallery />
           <About />
           <Pricing />
         </main>

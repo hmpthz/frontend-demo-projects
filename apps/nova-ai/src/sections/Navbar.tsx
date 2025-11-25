@@ -53,7 +53,9 @@ export const Navbar: React.FC = () => {
             <Button variant="outline" size="sm">
               Sign In
             </Button>
-            <Button size="sm">Get Access</Button>
+            <Button size="sm" className="font-bold">
+              Explore
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
