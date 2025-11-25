@@ -46,7 +46,7 @@ export const Features: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            <span className="text-nova-pink">///</span> SYSTEM MODULES
+            <span className="text-nova-pink">{'///'}</span> SYSTEM MODULES
           </h2>
           <div className="h-1 w-24 bg-nova-pink"></div>
         </div>

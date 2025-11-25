@@ -17,10 +17,10 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Features', href: '/#features' },
-    { name: 'Gallery', href: '/#gallery' },
-    { name: 'About', href: '/#about' },
-    { name: 'Pricing', href: '/#pricing' },
+    { name: 'Features', pathname: '/', hash: '#features' },
+    { name: 'Gallery', pathname: '/', hash: '#gallery' },
+    { name: 'About', pathname: '/', hash: '#about' },
+    { name: 'Pricing', pathname: '/', hash: '#pricing' },
   ];
 
   return (
@@ -43,13 +43,13 @@ export const Navbar: React.FC = () => {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
+            {navLinks.map(({ name, pathname, hash }) => (
               <Link
-                key={link.name}
-                to={link.href}
+                key={name}
+                to={{ pathname, hash }}
                 className="font-mono text-sm text-gray-400 hover:text-nova-pink transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-nova-pink hover:after:w-full after:transition-all"
               >
-                {link.name}
+                {name}
               </Link>
             ))}
             <Button variant="outline" size="sm">
@@ -77,14 +77,14 @@ export const Navbar: React.FC = () => {
         <div className="md:hidden bg-nova-dark border-b border-nova-border absolute w-full">
           <div className="px-4 pt-2 pb-6 space-y-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={{ pathname: link.pathname, hash: link.hash }}
                 className="block px-3 py-2 text-base font-mono text-gray-300 hover:text-nova-pink hover:bg-white/5 border-l-2 border-transparent hover:border-nova-pink transition-all"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             <div className="pt-4 flex flex-col gap-3">
               <Button variant="outline" className="w-full justify-center">

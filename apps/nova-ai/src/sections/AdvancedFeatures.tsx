@@ -10,7 +10,7 @@ export const AdvancedFeatures: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold font-sans text-white">
               CORE ARCHITECTURE
             </h2>
-            <p className="font-mono text-nova-pink text-sm mt-2">/// SYSTEM SPECIFICATIONS</p>
+            <p className="font-mono text-nova-pink text-sm mt-2">{'///'} SYSTEM SPECIFICATIONS</p>
           </div>
           <div className="hidden md:block font-mono text-xs text-gray-500">STATUS: OPTIMIZED</div>
         </div>

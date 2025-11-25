@@ -15,8 +15,8 @@ export function ErrorPage() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-black text-white">
-      <div className="max-w-md space-y-3 rounded-2xl border border-white/10 bg-white/5 p-8 text-center shadow-lg">
+    <div className="flex min-h-screen flex-col items-center justify-center text-white">
+      <div className="max-w-md space-y-3 border border-white/10 bg-white/5 p-8 text-center shadow-lg">
         <h1 className="text-2xl font-semibold">{title}</h1>
         <p className="text-sm text-white/70">{description}</p>
       </div>

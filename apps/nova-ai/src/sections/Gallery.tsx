@@ -13,7 +13,7 @@ export const Gallery: React.FC = () => {
     >
       <div className="px-4 mb-16 relative z-10">
         <h2 className="text-3xl md:text-5xl font-bold mb-4">
-          <span className="text-nova-pink">///</span> VISUAL ARCHIVE
+          <span className="text-nova-pink">{'///'}</span> VISUAL ARCHIVE
         </h2>
         <p className="font-mono text-gray-400">Rendered by community. Powered by Nova Core.</p>
       </div>
