@@ -23,6 +23,10 @@ export const Navbar: React.FC = () => {
     { name: 'Pricing', pathname: '/', hash: '#pricing' },
   ];
 
+  const handleNav = (pathname: string, hash: string) => {
+    navigate({ pathname, hash }, { state: { scrollRequest: Date.now() } });
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b border-transparent ${
@@ -47,6 +51,7 @@ export const Navbar: React.FC = () => {
               <Link
                 key={name}
                 to={{ pathname, hash }}
+                state={{ scrollRequest: Date.now() }}
                 className="font-mono text-sm text-gray-400 hover:text-nova-pink transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-nova-pink hover:after:w-full after:transition-all"
               >
                 {name}
@@ -80,8 +85,13 @@ export const Navbar: React.FC = () => {
               <Link
                 key={link.name}
                 to={{ pathname: link.pathname, hash: link.hash }}
+                state={{ scrollRequest: Date.now() }}
                 className="block px-3 py-2 text-base font-mono text-gray-300 hover:text-nova-pink hover:bg-white/5 border-l-2 border-transparent hover:border-nova-pink transition-all"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(event) => {
+                  event.preventDefault();
+                  setIsMobileMenuOpen(false);
+                  handleNav(link.pathname, link.hash);
+                }}
               >
                 {link.name}
               </Link>

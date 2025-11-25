@@ -2,7 +2,9 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 export function useFragmentScroll() {
-  const { hash } = useLocation();
+  const location = useLocation();
+  const { hash } = location;
+  const scrollRequest = (location.state as { scrollRequest?: number } | null)?.scrollRequest;
 
   useEffect(() => {
     if (!hash || typeof window === 'undefined') return;
@@ -39,5 +41,5 @@ export function useFragmentScroll() {
     return () => {
       cancelled = true;
     };
-  }, [hash]);
+  }, [hash, scrollRequest]);
 }
