@@ -1,17 +1,10 @@
 import fs from 'fs';
 import path from 'path';
+import { ImageMetadata as Metadata } from '../src/types';
 
 const rootDir = path.resolve(import.meta.dirname, '..');
 const metadataPath = path.resolve(rootDir, 'public', 'images-metadata.json');
 const imagesDir = path.resolve(rootDir, 'public', 'images');
-
-type Metadata = {
-  id: string;
-  url: string;
-  width: number;
-  height: number;
-  prompt?: string;
-};
 
 async function main(option: 'metadata' | 'images') {
   if (option === 'metadata') {

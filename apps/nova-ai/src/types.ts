@@ -24,3 +24,11 @@ export interface GalleryItem {
   prompt: string;
   author: string;
 }
+
+export interface ImageMetadata {
+  id: string;
+  url: string;
+  width: number;
+  height: number;
+  prompt?: string;
+}

@@ -1,8 +1,11 @@
 import React from 'react';
 import styles from './Gallery.module.css';
 import { Button } from '@/ui/Button';
+import { useNavigate } from 'react-router-dom';
 
 export const Gallery: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <section
       id="gallery"
@@ -21,9 +24,14 @@ export const Gallery: React.FC = () => {
         className={`w-[80%] h-auto mx-auto ${styles['fade-bottom']}`}
       />
 
-      <div className="flex flex-col items-center mt-10">
-        <div className="w-px h-30 bg-gray-500/50" />
-        <Button className="font-bold mt-8">Explore More</Button>
+      <div className="flex flex-col items-center mt-12">
+        <span className="text-[10px] uppercase tracking-[0.3em] font-mono text-gray-400">
+          Scroll
+        </span>
+        <div className="mt-4 w-px h-24 bg-linear-to-b from-nova-pink/60 to-transparent" />
+        <Button className="font-bold mt-8" onClick={() => navigate('/explore')}>
+          Explore More
+        </Button>
       </div>
     </section>
   );

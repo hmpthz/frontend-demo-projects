@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Terminal } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/ui/Button';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,10 +17,10 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Features', href: '#features' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'About', href: '#about' },
-    { name: 'Pricing', href: '#pricing' },
+    { name: 'Features', href: '/#features' },
+    { name: 'Gallery', href: '/#gallery' },
+    { name: 'About', href: '/#about' },
+    { name: 'Pricing', href: '/#pricing' },
   ];
 
   return (
@@ -42,18 +44,18 @@ export const Navbar: React.FC = () => {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className="font-mono text-sm text-gray-400 hover:text-nova-pink transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-nova-pink hover:after:w-full after:transition-all"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             <Button variant="outline" size="sm">
               Sign In
             </Button>
-            <Button size="sm" className="font-bold">
+            <Button size="sm" className="font-bold" onClick={() => navigate('/explore')}>
               Explore
             </Button>
           </div>

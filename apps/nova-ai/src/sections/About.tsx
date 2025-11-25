@@ -19,12 +19,12 @@ export const About: React.FC = () => {
             </h2>
             <div className="space-y-6 text-gray-400 text-lg font-light">
               <p>
-                Nova.ai wasn't built in a boardroom. It was forged in a basement by three engineers
-                and a digital artist who were tired of restrictive algorithms and censored
+                Nova.ai wasn&apos;t built in a boardroom. It was forged in a basement by three
+                engineers and a digital artist who were tired of restrictive algorithms and censored
                 creativity.
               </p>
               <p>
-                We believe that AI shouldn't replace human creativity—it should amplify it to
+                We believe that AI shouldn&apos;t replace human creativity—it should amplify it to
                 god-like levels. We build tools for the dreamers, the hackers, and the visual
                 storytellers who demand total control over their synthetic reality.
               </p>

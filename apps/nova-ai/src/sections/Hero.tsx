@@ -78,7 +78,7 @@ export const Hero: React.FC = () => {
                 <p>&gt; loading neural_weights [================] 100%</p>
                 <p>&gt; establishing secure uplink...</p>
                 <p className="text-white">
-                  &gt; prompt: "cyberpunk samurai in neon rain, octane render"
+                  &gt; prompt: &quot;cyberpunk samurai in neon rain, octane render&quot;
                 </p>
                 <p>&gt; processing...</p>
                 <div className="mt-4 relative group">
@@ -107,7 +107,7 @@ export const Hero: React.FC = () => {
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
         <span className="text-[10px] uppercase tracking-[0.3em] font-mono">Scroll</span>
-        <div className="w-[1px] h-12 bg-gradient-to-b from-nova-pink to-transparent"></div>
+        <div className="w-px h-12 bg-linear-to-b from-nova-pink to-transparent"></div>
       </div>
     </section>
   );

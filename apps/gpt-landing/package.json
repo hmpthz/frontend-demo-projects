@@ -8,8 +8,8 @@
     "type-check": "tsc --noEmit",
     "build": "pnpm type-check && vite build",
     "preview": "vite preview",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
     "test": "vitest run"
   },
   "dependencies": {

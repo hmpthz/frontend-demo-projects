@@ -1,5 +1,6 @@
 import React from 'react';
 import { Terminal, Github, Twitter, Disc } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
@@ -23,24 +24,24 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="#" className="hover:text-nova-pink transition-colors">
+                <Link to="#" className="hover:text-nova-pink transition-colors">
                   Gallery
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-nova-pink transition-colors">
+                <Link to="#" className="hover:text-nova-pink transition-colors">
                   Pricing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-nova-pink transition-colors">
+                <Link to="#" className="hover:text-nova-pink transition-colors">
                   API Docs
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-nova-pink transition-colors">
+                <Link to="#" className="hover:text-nova-pink transition-colors">
                   Status
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -50,24 +51,24 @@ export const Footer: React.FC = () => {
               Connect
             </h4>
             <div className="flex gap-4">
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="p-2 border border-nova-border hover:border-nova-pink hover:text-nova-pink transition-colors"
               >
                 <Github size={18} />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="p-2 border border-nova-border hover:border-nova-pink hover:text-nova-pink transition-colors"
               >
                 <Twitter size={18} />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="p-2 border border-nova-border hover:border-nova-pink hover:text-nova-pink transition-colors"
               >
                 <Disc size={18} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -75,12 +76,12 @@ export const Footer: React.FC = () => {
         <div className="border-t border-nova-border pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 font-mono">
           <p>&copy; 2024 Nova Artificial Intelligence Systems. All systems nominal.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white">
+            <Link to="#" className="hover:text-white">
               Privacy Protocol
-            </a>
-            <a href="#" className="hover:text-white">
+            </Link>
+            <Link to="#" className="hover:text-white">
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>

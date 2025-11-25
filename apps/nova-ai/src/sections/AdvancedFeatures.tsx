@@ -125,10 +125,10 @@ export const AdvancedFeatures: React.FC = () => {
                 <span className="text-purple-400">await</span> nova.generate({'{'}
               </p>
               <p className="pl-4">
-                prompt: <span className="text-green-400">"hyper-realistic..."</span>,
+                prompt: <span className="text-green-400">&quot;hyper-realistic...&quot;</span>,
               </p>
               <p className="pl-4">
-                model: <span className="text-green-400">"nova-xl-v4"</span>
+                model: <span className="text-green-400">&quot;nova-xl-v4&quot;</span>
               </p>
               <p>&rbrace;);</p>
             </div>

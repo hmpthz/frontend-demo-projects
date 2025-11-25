@@ -1,37 +1,32 @@
-import React from 'react';
-import { Navbar } from './sections/Navbar';
-import { Hero } from './sections/Hero';
-import { CanvasBackground } from './sections/CanvasBackground';
-import { Gallery } from './sections/Gallery';
-import { Features } from './sections/Features';
-import { AdvancedFeatures } from './sections/AdvancedFeatures';
-import { About } from './sections/About';
-import { Pricing } from './sections/Pricing';
-import { Footer } from './sections/Footer';
+import { RouterProvider } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
+import { HomePage, homeLoader } from './app/page';
+import { RootLayout } from './app/layout';
+import { ErrorPage } from './app/error-page';
+import { exploreLoader, ExplorePage } from './app/explore';
+
+const router = createHashRouter([
+  {
+    path: '/',
+    Component: RootLayout,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        index: true,
+        loader: homeLoader,
+        Component: HomePage,
+      },
+      {
+        path: '/explore',
+        loader: exploreLoader,
+        Component: ExplorePage,
+      },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <div className="relative min-h-screen text-white selection:bg-nova-pink selection:text-black overflow-x-hidden">
-      {/* Canvas acts as the background layer at z-0 */}
-      <CanvasBackground />
-
-      {/* Content wrapper at z-10 ensures it sits on top of canvas */}
-      <div className="relative z-10">
-        <Navbar />
-
-        <main className="flex flex-col">
-          <Hero />
-          <Features />
-          <AdvancedFeatures />
-          <Gallery />
-          <About />
-          <Pricing />
-        </main>
-
-        <Footer />
-      </div>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
