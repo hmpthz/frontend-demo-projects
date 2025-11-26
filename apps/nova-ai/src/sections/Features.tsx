@@ -53,7 +53,7 @@ export const Features: React.FC = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
-            <Card key={index} className="h-full hover:bg-white/5 transition-colors">
+            <Card key={index} className="h-full hover:bg-white/5 transition-colors p-6">
               <div className="mb-6 p-3 bg-white/5 inline-block border border-white/10">
                 {feature.icon}
               </div>

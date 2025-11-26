@@ -149,6 +149,9 @@ importers:
 
   apps/nova-ai:
     dependencies:
+      another-react-responsive-masonry:
+        specifier: 0.1.0-alpha.3
+        version: 0.1.0-alpha.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       lucide-react:
         specifier: ^0.554.0
         version: 0.554.0(react@19.2.0)
@@ -1251,6 +1254,13 @@ packages:
 
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
+
+  another-react-responsive-masonry@0.1.0-alpha.3:
+    resolution: {integrity: sha512-lkiL1FZ5A+sqN6lMQAjM8Y+VQfq15hyBMDYyz1WGiyYs/f1gzxYZ1sQDUNJqOlad/5kjWjPBrcjhb+i1eYjYGQ==}
+    engines: {node: '>=22.0.0'}
+    peerDependencies:
+      react: ^19.0.0
+      react-dom: ^19.0.0
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -3841,6 +3851,11 @@ snapshots:
       fast-json-stable-stringify: 2.1.0
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
+
+  another-react-responsive-masonry@0.1.0-alpha.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
+    dependencies:
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
   ansi-regex@5.0.1: {}
 

@@ -16,8 +16,8 @@ export const Card: React.FC<CardProps> = ({
   return (
     <div
       className={`
-      relative bg-nova-panel/80 backdrop-blur-sm border border-nova-border p-6 rounded-none
-      ${hoverEffect ? 'hover:border-nova-pink/50 transition-colors duration-300 group' : ''}
+      relative bg-nova-panel/80 backdrop-blur-sm border border-nova-border rounded-none
+      ${hoverEffect ? 'hover:border-nova-pink/50 hover:bg-transparent transition-colors duration-300 group' : ''}
       ${className}
     `}
     >
