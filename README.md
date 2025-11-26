@@ -22,7 +22,9 @@ The monorepo is managed by pnpm workspace, and all projects are written in types
     <img alt="gemini" src="https://img.shields.io/badge/Google%20Gemini-886FBF?style=for-the-badge&logo=googlegemini&logoColor=fff" />
 </p>
 
-Vibe coding with Google Gemini 3 Pro.
+Vibe coding with Google Gemini 3 Pro and Codex.
+
+- [Explore Page](https://hmpthz.github.io/frontend-demo-projects/nova-ai/index.html#/explore) is an example of my open source masonry library [another-react-responsive-masonry](https://github.com/hmpthz/another-react-responsive-masonry)
 
 ### Metaverse
 

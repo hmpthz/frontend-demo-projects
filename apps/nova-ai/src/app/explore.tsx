@@ -27,7 +27,7 @@ type MasonryItem = Metadata & {
 
 export function exploreLoader() {
   const t0 = performance.now();
-  const dataLoading = fetch('/images-metadata.json').then(async (res) => {
+  const dataLoading = fetch('./images-metadata.json').then(async (res) => {
     const data: Metadata[] = await res.json();
     const duration = performance.now() - t0;
     // load more time if too short
