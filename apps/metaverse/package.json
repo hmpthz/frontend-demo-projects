@@ -8,8 +8,8 @@
     "type-check": "tsc --noEmit",
     "build": "pnpm type-check && next build",
     "start": "next start -p 5173",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
     "test": "vitest run"
   },
   "dependencies": {

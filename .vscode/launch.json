@@ -21,7 +21,7 @@
       "type": "chrome",
       "request": "launch",
       "url": "http://localhost:5173",
-      "webRoot": "${workspaceFolder}",
+      "webRoot": "${workspaceFolder}/apps/nova-ai",
       "userDataDir": "${env:HOME}${env:USERPROFILE}/.cache/chrome-debug-profile",
       "resolveSourceMapLocations": ["${workspaceFolder}/**", "!**/node_modules/**"],
       "sourceMaps": true

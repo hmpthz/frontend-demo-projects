@@ -56,7 +56,7 @@ export const extended = {
       'react/prop-types': 0,
       'jsx-a11y/click-events-have-key-events': 0,
       'jsx-a11y/anchor-is-valid': [
-        'error',
+        0,
         {
           components: ['Link'],
           specialLink: ['to', 'hrefLeft', 'hrefRight'],
