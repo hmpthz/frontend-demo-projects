@@ -28,7 +28,8 @@ export interface GalleryItem {
 export interface ImageMetadata {
   id: string;
   url: string;
+  localUrl: string;
   width: number;
   height: number;
-  prompt?: string;
+  alt?: string;
 }

@@ -1,1 +1,3 @@
 /scripts/*.json
+/public/images
+/public/images-metadata.json

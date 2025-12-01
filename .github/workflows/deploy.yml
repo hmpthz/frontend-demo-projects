@@ -21,6 +21,8 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    env:
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,9 +41,16 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Fetch Pexels metadata
+        run: node scripts/pexels-curated.mjs metadata
+        working-directory: apps/nova-ai
+
+      - name: Download Pexels images
+        run: node scripts/pexels-curated.mjs images
+        working-directory: apps/nova-ai
+
       - name: Build
         run: pnpm run build:spa
-        env: ${{ vars }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

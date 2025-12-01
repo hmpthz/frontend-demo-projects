@@ -301,8 +301,8 @@ const MasonryCard = React.memo(function MasonryCard({
         <div className="relative w-full overflow-hidden">
           <div className="block w-full" style={{ paddingBottom: `${item.ratio * 100}%` }} />
           <img
-            src={item.url}
-            alt={item.prompt ?? 'Generated artwork'}
+            src={item.localUrl}
+            alt={item.alt ?? 'Generated artwork'}
             loading="lazy"
             className="absolute inset-0 w-full h-full object-cover"
           />
