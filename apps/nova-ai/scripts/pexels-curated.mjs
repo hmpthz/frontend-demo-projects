@@ -51,12 +51,23 @@ async function main(option) {
     fs.writeFileSync(metadataPath, JSON.stringify(metadata, null, 2));
     console.log(`Saved metadata to ${metadataPath}`);
   } else {
+    const CHUNK_SIZE = 5;
+
     /** @type {Metadata[]} */
     const metadata = JSON.parse(fs.readFileSync(metadataPath, 'utf8'));
     await fs.promises.mkdir(imagesDir, { recursive: true });
-    for (let index = 0; index < metadata.length; index++) {
+
+    for (let start = 0; start < metadata.length; start += CHUNK_SIZE) {
+      const end = Math.min(start + CHUNK_SIZE, metadata.length);
+      const chunk = metadata.slice(start, end);
+
+      // Download up to CHUNK_SIZE images concurrently.
       // eslint-disable-next-line no-await-in-loop
-      await downloadImage(metadata[index], index, metadata.length);
+      await Promise.all(
+        chunk.map((item, offset) =>
+          downloadImage(item, start + offset, metadata.length)
+        )
+      );
     }
   }
 }
